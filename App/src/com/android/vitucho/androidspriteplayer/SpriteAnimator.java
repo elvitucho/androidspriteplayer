@@ -3,6 +3,7 @@ package com.android.vitucho.androidspriteplayer;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Rect;
+import android.util.Log;
 
 /**
  * Code adapted from http://obviam.net/index.php/sprite-animation-with-android/
@@ -73,6 +74,7 @@ public class SpriteAnimator {
 	}
 
 	public void draw(Canvas canvas) {
+		Log.d(TAG, "draw");
 		// where to draw the sprite
 		Rect destRect = new Rect(getX(), getY(), getX() + spriteWidth, getY() + spriteHeight);
 		canvas.drawBitmap(bitmap, sourceRect, destRect, null);
