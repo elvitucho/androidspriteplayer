@@ -27,6 +27,9 @@ public class SpriteAnimator {
 	private int y;				// the Y coordinate of the object (top left of the image)
 
 
+	public SpriteAnimator(Bitmap bitmap, int width, int height, int fps, int frameCount) {
+		this(bitmap, 0, 0, width, height, fps, frameCount);
+	}
 	public SpriteAnimator(Bitmap bitmap, int x, int y, int width, int height, int fps, int frameCount) {
 		this.bitmap = bitmap;
 		this.x = x;
